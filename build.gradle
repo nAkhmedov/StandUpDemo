@@ -24,3 +24,10 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    roomDatabase = '1.1.1'
+    dagger = '2.26'
+    rxjava2 = "2.2.9"
+    work = "1.0.1"
+}
