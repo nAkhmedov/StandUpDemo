@@ -27,7 +27,8 @@ task clean(type: Delete) {
 
 ext {
     roomDatabase = '1.1.1'
-    dagger = '2.26'
+    dagger = '2.27'
     rxjava2 = "2.2.9"
+    rx_android = "2.1.0"
     work = "1.0.1"
 }

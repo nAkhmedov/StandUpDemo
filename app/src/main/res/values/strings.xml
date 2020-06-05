@@ -3,6 +3,8 @@
     <string name="tab_text_1">ViewBinding</string>
     <string name="tab_text_2">DataBinding</string>
     <string name="tab_text_3">LiveData</string>
+    <string name="tab_text_4">RxJava</string>
     <string name="view_binding_sample_text">View Binding Sample Text</string>
     <string name="increment">Increment</string>
+    <string name="get_world_time">Get World Time</string>
 </resources>

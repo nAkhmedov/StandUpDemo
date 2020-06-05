@@ -4,6 +4,7 @@ import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import uz.khorezm.standupdemo.KhorezmApp
+import uz.khorezm.standupdemo.api.ApiModule
 import javax.inject.Singleton
 
 @Singleton
@@ -11,6 +12,7 @@ import javax.inject.Singleton
     modules = [
         AndroidSupportInjectionModule::class,
         AppModule::class,
+        ApiModule::class,
         ActivityBuilder::class
     ]
 )

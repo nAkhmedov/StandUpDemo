@@ -7,11 +7,13 @@ import androidx.fragment.app.FragmentPagerAdapter
 import uz.khorezm.standupdemo.R
 import uz.khorezm.standupdemo.ui.databinding.DataBindingFragment
 import uz.khorezm.standupdemo.ui.livedata.LiveDataFragment
+import uz.khorezm.standupdemo.ui.rxjava.RxJavaFragment
 
 private val TAB_TITLES = arrayOf(
         R.string.tab_text_1,
         R.string.tab_text_2,
-        R.string.tab_text_3
+        R.string.tab_text_3,
+        R.string.tab_text_4
 )
 
 /**
@@ -28,6 +30,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
             0    -> ViewBindingFragment.newInstance()
             1    -> DataBindingFragment.newInstance()
             2    -> LiveDataFragment.newInstance()
+            3    -> RxJavaFragment.newInstance()
             else -> ViewBindingFragment.newInstance()
         }
     }
@@ -38,6 +41,6 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager)
 
     override fun getCount(): Int {
         // Show 2 total pages.
-        return 3
+        return 4
     }
 }

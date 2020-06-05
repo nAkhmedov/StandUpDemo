@@ -6,6 +6,7 @@ import uz.khorezm.standupdemo.ui.databinding.DataBindingFragment
 import uz.khorezm.standupdemo.ui.livedata.LiveDataFragment
 import uz.khorezm.standupdemo.ui.main.MainActivity
 import uz.khorezm.standupdemo.ui.main.ViewBindingFragment
+import uz.khorezm.standupdemo.ui.rxjava.RxJavaFragment
 
 @Module
 abstract class ActivityBuilder {
@@ -21,4 +22,8 @@ abstract class ActivityBuilder {
 
     @ContributesAndroidInjector
     abstract fun bindLiveDataFragment(): LiveDataFragment
+
+    @ContributesAndroidInjector
+    abstract fun bindRxJavaFragment(): RxJavaFragment
+
 }
